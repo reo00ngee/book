@@ -33,8 +33,8 @@ function validate($reviews){
   } elseif (mb_strlen($reviews['author']) > 255) {
     $errors['author'] = '著者名は255文字以内で入力してください';
 
-  } elseif ($reviews['status'] !== '未読' && $reviews['status'] !== '読んでいる' && $reviews['status'] !== '読了') {
-    $errors['status'] = '読書状況は未読,読んでいる,読了のいずれかを記入してください';
+  } elseif ($reviews['status'] !== '未読' && $reviews['status'] !== '読書中' && $reviews['status'] !== '読了') {
+    $errors['status'] = '読書状況は未読,読書中,読了のいずれかを記入してください';
 
   } elseif ($reviews['assessment'] === 0 || $reviews['assessment'] > 5) {
     $errors['assessment'] = '評価は1~5で入力してください';

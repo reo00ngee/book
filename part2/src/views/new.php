@@ -21,8 +21,8 @@
     
         <input type="radio" name="status" id="status1" value="未読" <?php echo ($reviews['status'] ==='未読')? 'checked' : '';?>>
         <label for="status">未読</label>
-        <input type="radio" name="status" id="status2" value="読んでいる" <?php echo ($reviews['status'] ==='読んでいる')? 'checked' : '';?>>
-        <label for="status">読んでいる</label>
+        <input type="radio" name="status" id="status2" value="読書中" <?php echo ($reviews['status'] ==='読書中')? 'checked' : '';?>>
+        <label for="status">読書中</label>
         <input type="radio" name="status" id="status3" value="読了" <?php echo ($reviews['status'] ==='読了')? 'checked' : '';?>>
         <label for="status">読了</label>
       </div>
