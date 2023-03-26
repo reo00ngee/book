@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/mysqli.php';
-
+require_once __DIR__ . '/views/escape.php';
 
 
 function listReviews($link)
